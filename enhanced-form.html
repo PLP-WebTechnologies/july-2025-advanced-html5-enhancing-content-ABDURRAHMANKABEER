@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Enhanced Form Assignment" />
+  <title>Enhanced Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>My Enhanced Form Page</h1>
+    <p>Containing lists, a table, multimedia, and a form</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Practicing Lists</h2>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Open VS Code</li>
+        <li>Write HTML</li>
+        <li>Save and test</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Phone</li>
+        <li>Charger</li>
+        <li>Notebook</li>
+      </ul>
+
+      <h3>Definition List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <db>Structure of the web</db>
+        <dt>CSS</dt>
+        <db>Styles the page</db>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Practincing a Simple Table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Abdurrahman</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Fatima</td>
+            <td>88</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+      <p>Sample audio and video:</p>
+
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
+
+      <br/><br/>
+
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        
+        <label for="name">Full Name</label><br/>
+        <input type="text" id="name" name="name" placeholder="e.g. Kabir Musa" required><br/><br/>
+
+        <label for="email">Email</label><br/>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br/><br/>
+
+        <label for="dob">Date of Birth</label><br/>
+        <input type="date" id="dob" name="dob" required><br/><br/>
+
+        <label for="gender">Gender</label><br/>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br/><br/>
+
+        <label for="password">Password</label><br/>
+        <input type="password" id="password" name="password" pattern=".{6,}" placeholder="Minimum of 6 characters" required><br/><br/>
+
+        <label for="bio">Short Bio</label><br/>
+        <textarea id="bio" name="bio" rows="3" placeholder="Tell us about you"></textarea><br/><br/>
+
+        <label for="readonly">Student ID</label><br/>
+        <input type="text" id="readonly" value="U21EE1077" readonly><br/><br/>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Abdurrahman Kabir</p>
+  </footer>
+
+</body>
+</html>
